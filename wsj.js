@@ -12,17 +12,13 @@ jQuery(function() {
 
 
 
-for (let i=1; i<40; i++) {
+for (let i=5; i<40; i++) {
       let wnews = data.articles[i];
       let html = '<div class="col-4">';
-      html = html + '<h6 class="card-title">' + wnews.title + '</h6>';
-
-            html = html + '<p class="card-title">' + wnews.description +'<p>';
-            // html = html + '<img class="card-img-top" src="' + wnews.urlToImage + '">';
-            // html = html + '<p class="card-title">' + books.contributor + '<p>';
-      // html = html + '<p class="card-title">' + books.description + '<p>';
+      html = html + '<h4 class="card-title">' + wnews.title + '</h4>';
+      html = html + '<p class="card-title">' + wnews.description +'<p>';
       html = html + '<div class="card-body">';
-      html = html + '</div></div>';
+      html = html + '</div>';
       $(".row").append(html);
 }
 $(".row").fadeIn(2000);
